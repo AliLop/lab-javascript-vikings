@@ -1,0 +1,23 @@
+{
+  "name": "lab-javascript-vikings",
+  "version": "1.0.0",
+  "description": "lab-vikings",
+  "main": "viking.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npm test",
+    "start": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AliLop/lab-javascript-vikings.git"
+  },
+  "author": "ali lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AliLop/lab-javascript-vikings/issues"
+  },
+  "homepage": "https://github.com/AliLop/lab-javascript-vikings#readme"
+}

@@ -70,7 +70,7 @@ class War {
         let viking = this.vikingArmy[Math.floor(Math.random() * this.vikingArmy.length)];
         
         let result = saxon.receiveDamage(viking.strength); 
-
+        
         if (saxon.health < 1) {
             this.saxonArmy.splice(this.saxonArmy[saxon]);
         }
@@ -90,6 +90,7 @@ class War {
 
         return result; 
     } 
+    
         
     showStatus() {
         if(this.saxonArmy.length === 0) {
@@ -112,8 +113,14 @@ class War {
 
 let war1 = new War (); 
 
-war1.addViking('Lagertha');
+war1.addViking(new Viking("Lagertha", 100, 65));
+war1.addSaxon(new Saxon(100, 20));
+
+// Cannot addsAxon directly, I have to always CREATE new Saxon (Object)
+
+console.log(war1.vikingArmy);
+console.log(war1.saxonArmy);
 
 war1.vikingAttack();
-console.log(war1.vikingArmy);
 
+war1.showStatus();
